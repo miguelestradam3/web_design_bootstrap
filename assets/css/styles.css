@@ -1,0 +1,18 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Empuja el footer hacia abajo */
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
