@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <link rel="icon" href="assets/img/logo.jpg" type="image/jpeg">
         <!-- Bootstrap CSS -->
         <link href="assets/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
         <link href="assets/bootstrap/icons/bootstrap-icons.min.css" type="text/css" rel="stylesheet">
@@ -19,7 +20,7 @@
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="Logo">
                 </a>
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">Miguel Estrada</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                     <span class="navbar-toggler-icon"></span>
@@ -43,41 +44,45 @@
                 <div class="container p-3">
                     <div class="row">
                         <div class="col-md-6">
-                            <h2>Bienvenido a nuestro sitio <span class="badge badge-primary">Primary</span></h2>
+                            <h2><i class="bi bi-globe-americas"></i> Bienvenido a nuestro sitio <span class="badge badge-primary">Primary</span></h2>
                             <hr/>
                             <p>Este es un ejemplo de cómo usar Bootstrap para crear una página web responsive.</p>
                             <p class="text-muted">En este sitio encontrarás información sobre nuestros servicios y productos.</p>
                         </div>
                         <div class="col-md-6">
-                            <img src="assets/img/index.jpg" class="img-fluid"/>
+                            <img src="assets/img/index.jpg" class="img-fluid w-100"/>
                         </div>
                     </div>
                 </div>
             </section> 
             <section>
+                <div class="container text-center my-5">
+                    <h2 class="font-weight-bold">Follow me on social media</h2>
+                    <div class="mx-auto bg-primary" style="width: 60px; height: 3px;"></div>
+                </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8">
                             <div class="card">
                                 <div class="card-header">
-                                    Featured <span class="badge badge-secondary">Secondary</span>
+                                    Take a look at my <span class="badge badge-secondary">programs</span>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <p class="card-text text-secondary">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary"> <i class="bi bi-github"></i> Github</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="card">
                                 <div class="card-header">
-                                    Featured <span class="badge badge-secondary">Secondary</span>
+                                    Check out my <span class="badge badge-secondary">experience</span>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn btn-primary"><i class="bi bi-chevron-right"></i> Go somewhere</a>
+                                    <p class="card-text text-secondary">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary"> <i class="bi bi-linkedin"></i> LinkedIn</a>
                                 </div>
                             </div>
                         </div>
@@ -85,9 +90,18 @@
                 </div>
             </section>
             <section>
+                <div class="container text-center my-5">
+                    <h2 class="font-weight-bold">Contact me</h2>
+                    <div class="mx-auto bg-primary" style="width: 60px; height: 3px;"></div>
+                </div>
                 <div class="container p-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <iframe class="img-fluid w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.215964110916!2d-84.12446647275355!3d9.99901177304726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0faddaded66bd%3A0x2527e99d1a1e0bdf!2sHeredia!5e0!3m2!1ses!2scr!4v1776460522526!5m2!1ses!2scr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
                     <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                        <strong>Atención:</strong> Todos los campos son obligatorios.
+                        <strong><i class="bi bi-exclamation-circle-fill"></i> Warning:</strong> It is required to fill out all fields.
                         <button type="button" class="close" data-dismiss="alert">
                             &times;
                         </button>
@@ -99,8 +113,8 @@
                             <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
                             </div>
                             <div class="form-group col-md-6">
-                            <label for="inputPassword4">Password</label>
-                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            <label for="inputPassword4">Phone number</label>
+                            <input type="text" class="form-control" id="inputPassword4" placeholder="Phone number" required>
                             </div>
                         </div>
                         <div class="form-group">
@@ -110,17 +124,22 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                             <label for="inputCity">City</label>
-                            <input type="text" class="form-control" id="inputCity" required>
+                            <input type="text" class="form-control" id="inputCity" placeholder="Heredia Centro" required>
                             </div>
                             <div class="form-group col-md-6">
                             <label for="inputState">State</label>
                             <select id="inputState" class="form-control" required>
-                                <option selected>Choose...</option>
-                                <option>...</option>
+                                <option selected>San Jose</option>
+                                <option>Alajuela</option>
+                                <option>Cartago</option>
+                                <option>Heredia</option>
+                                <option>Guanacaste</option>
+                                <option>Puntarenas</option> 
+                                <option>Limón</option>
                             </select>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+                        <button type="submit" class="btn btn-primary">Sign in <i class="bi bi-bookmark-check"></i></button>
                     </form>
                 </div>
             </section>     
@@ -135,7 +154,7 @@
                         <div class="col-md-3 mb-3">
                             <h5>About Me</h5>
                             <p>
-                                I am a web development student focused on improving my skills in HTML, CSS, and Bootstrap.
+                                I am a web development student at Fidelitas, focused on improving my skills in programming.
                             </p>
                         </div>
 
@@ -158,8 +177,7 @@
                         <div class="col-md-3 mb-3">
                                 <div class="d-flex justify-content-center">
                                     <p>Follow me on:</p>
-                                    <a href="#" class="text-white mx-3"><i class="bi bi-facebook"></i></a>
-                                    <a href="#" class="text-white mx-3"><i class="bi bi-instagram"></i></a>
+                                    <a href="#" class="text-white mx-3"><i class="bi bi-linkedin"></i></a>
                                     <a href="#" class="text-white mx-3"><i class="bi bi-github"></i></a>
                                 </div>
                         </div>
