@@ -58,12 +58,16 @@
             </section> 
             <section>
                 <div class="container text-center my-5">
-                    <h2 class="font-weight-bold">Follow me on social media</h2>
-                    <div class="mx-auto bg-primary" style="width: 60px; height: 3px;"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="font-weight-bold">Follow me on social media</h2>
+                            <div class="mx-auto bg-primary" style="width: 60px; height: 3px;"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-6">
                             <div class="card">
                                 <div class="card-header">
                                     Take a look at my <span class="badge badge-secondary">programs</span>
@@ -75,7 +79,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="card">
                                 <div class="card-header">
                                     Check out my <span class="badge badge-secondary">experience</span>
@@ -96,52 +100,60 @@
                     <div class="mx-auto bg-primary" style="width: 60px; height: 3px;"></div>
                 </div>
                 <div class="container p-3">
+
                     <div class="row">
                         <div class="col-md-12 w-100">
                             <iframe class="img-fluid w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.215964110916!2d-84.12446647275355!3d9.99901177304726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0faddaded66bd%3A0x2527e99d1a1e0bdf!2sHeredia!5e0!3m2!1ses!2scr!4v1776460522526!5m2!1ses!2scr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
-                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                        <strong><i class="bi bi-exclamation-circle-fill"></i> Warning:</strong> It is required to fill out all fields.
-                        <button type="button" class="close" data-dismiss="alert">
-                            &times;
-                        </button>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                <strong><i class="bi bi-exclamation-circle-fill"></i> Warning:</strong> It is required to fill out all fields.
+                                <button type="button" class="close" data-dismiss="alert">
+                                    &times;
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Email</label>
+                                    <input type="email" class="form-control" name="inputEmail4" id="inputEmail4" placeholder="Email" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Phone number</label>
+                                    <input type="text" class="form-control" name="inputPassword4" id="inputPassword4" placeholder="Phone number" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress">Address</label>
+                                    <input type="text" class="form-control" name="inputAddress" id="inputAddress" placeholder="Somewhere in Heredia Centro" required>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" name="inputCity" id="inputCity" placeholder="Heredia Centro" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                    <label for="inputState">State</label>
+                                    <select id="inputState" class="form-control" name="inputState" required>
+                                        <option selected>San Jose</option>
+                                        <option>Alajuela</option>
+                                        <option>Cartago</option>
+                                        <option>Heredia</option>
+                                        <option>Guanacaste</option>
+                                        <option>Puntarenas</option> 
+                                        <option>Limón</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Sign in <i class="bi bi-bookmark-check"></i></button>
+                            </form>
+                        </div>
                     </div>
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                            <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
-                            </div>
-                            <div class="form-group col-md-6">
-                            <label for="inputPassword4">Phone number</label>
-                            <input type="text" class="form-control" id="inputPassword4" placeholder="Phone number" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputAddress">Address</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                            <label for="inputCity">City</label>
-                            <input type="text" class="form-control" id="inputCity" placeholder="Heredia Centro" required>
-                            </div>
-                            <div class="form-group col-md-6">
-                            <label for="inputState">State</label>
-                            <select id="inputState" class="form-control" required>
-                                <option selected>San Jose</option>
-                                <option>Alajuela</option>
-                                <option>Cartago</option>
-                                <option>Heredia</option>
-                                <option>Guanacaste</option>
-                                <option>Puntarenas</option> 
-                                <option>Limón</option>
-                            </select>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Sign in <i class="bi bi-bookmark-check"></i></button>
-                    </form>
                 </div>
             </section>     
         </main>
@@ -152,7 +164,7 @@
                     <div class="row text-center text-md-left">
 
                         <!-- About -->
-                        <div class="col-md-3 mb-3">
+                        <div class="col-md-3 mb-3 p-3">
                             <h5>About Me</h5>
                             <p>
                                 I am a web development student at Fidelitas, focused on improving my skills in programming.
@@ -160,7 +172,7 @@
                         </div>
 
                         <!-- Links -->
-                        <div class="col-md-3 mb-3">
+                        <div class="col-md-3 mb-3 p-3">
                             <h5>Quick Links</h5>
                             <ul class="list-unstyled">
                                 <li><a href="index.html" class="text-white">Home</a></li>
@@ -169,7 +181,7 @@
                         </div>
 
                         <!-- Contact -->
-                        <div class="col-md-3 mb-3">
+                        <div class="col-md-3 mb-3 p-3">
                             <h5>Contact</h5>
                             <p>Email: miguelestradam36@gmail.com</p>
                         </div>
